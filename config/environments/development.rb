@@ -22,5 +22,20 @@ Depot::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+
+  # RSH June 13  
+  #  config.action_mailer.delivery_method = :smtp
+  #  Uncomment the line above and all the lines below, comment out the line below and fill in your randy.hawkins.md@gmail.com password below to actually send mail from randy.hawkins.md@gmail.com
+  config.action_mailer.delivery_method = :test
+#  config.action_mailer.smtp_settings = {
+#    :address => "smtp.gmail.com",
+#    :port => 587,
+#    :domain => "www.gmail.com",
+#    :authentication => "plain",
+#    :user_name => "randy.hawkins.md",
+#    :password => "RSH PUT IN PASSWORD HERE",
+#    :enable_starttls_auto => true
+#  }
 end
 
